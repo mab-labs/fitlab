@@ -1,0 +1,45 @@
+.separator {
+    height: 1px;
+    width: 100%;
+    display: block;
+    margin: 16px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+.navbar-image {
+    margin-top: -6px;
+}
+
+.varela-font {
+    font-family: 'Varela Round', sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+    .gt-xs {
+        display: none;
+    }
+
+    .eq-ex {
+        display: 100;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gt-sm {
+        display: none;
+    }
+    #publish-button {
+        display: block;
+        width: 100%;
+    }
+    .main-container {
+        margin-top: 50px;
+        padding-bottom: 100px;
+    }
+}
+
+.main-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

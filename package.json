@@ -1,0 +1,26 @@
+{
+  "name": "fitlab",
+  "version": "1.0.0",
+  "description": "Dashboard creado para el FIT 2017",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mab-labs/fitlab.git"
+  },
+  "author": "Rigoberto Acifuina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mab-labs/fitlab/issues"
+  },
+  "homepage": "https://github.com/mab-labs/fitlab#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "moment-timezone": "^0.5.13",
+    "mqtt": "^2.13.0",
+    "socket.io": "^1.7.3"
+  }
+}
