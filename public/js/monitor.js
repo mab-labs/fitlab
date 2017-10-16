@@ -7,21 +7,20 @@ $(document).ready(function () {
 socket.emit("getAllData", function (data) {
     for (var index in data.data) {
         $("#" + index).find("#fecha").text(data.data[index].date);
-        $("#" + index).find("#temperatura").text(data.data[index].T);
-        $("#" + index).find("#humedad").text(data.data[index].H);
-        $("#" + index).find("#luminosidad").text(data.data[index].L);
+        $("#" + index).find("#temperatura").text(data.data[index].T + " ºC");
+        $("#" + index).find("#humedad").text(data.data[index].H + " %");
+        $("#" + index).find("#luminosidad").text(data.data[index].L + "lm");
         $("#" + index).find("#otro").text(data.data[index].O);
         $("#" + index).find("#reply").val(data.data[index].reply);
     }
 });
 
 socket.on("record", function (data) {
-    console.log("record", data);
     var index = data.id;
     $("#" + index).find("#fecha").text(data.date);
-    $("#" + index).find("#temperatura").text(data.T);
-    $("#" + index).find("#humedad").text(data.H);
-    $("#" + index).find("#luminosidad").text(data.L);
+    $("#" + index).find("#temperatura").text(data.T + " ºC");
+    $("#" + index).find("#humedad").text(data.H + " %");
+    $("#" + index).find("#luminosidad").text(data.L + " lm");
     $("#" + index).find("#otro").text(data.O);
     $("#" + index).find("#reply").val(data.reply);
 });
