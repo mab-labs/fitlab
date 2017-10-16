@@ -17,13 +17,13 @@ socket.emit("getAllData", function (data) {
 
 socket.on("record", function (data) {
     console.log("record", data);
-    var index = data.id
-    $("#" + index).find("#fecha").text(data.data[index].date);
-    $("#" + index).find("#temperatura").text(data.data[index].T);
-    $("#" + index).find("#humedad").text(data.data[index].H);
-    $("#" + index).find("#luminosidad").text(data.data[index].L);
-    $("#" + index).find("#otro").text(data.data[index].O);
-    $("#" + index).find("#reply").val(data.data[index].reply);
+    var index = data.id;
+    $("#" + index).find("#fecha").text(data[index].date);
+    $("#" + index).find("#temperatura").text(data[index].T);
+    $("#" + index).find("#humedad").text(data[index].H);
+    $("#" + index).find("#luminosidad").text(data[index].L);
+    $("#" + index).find("#otro").text(data[index].O);
+    $("#" + index).find("#reply").val(data[index].reply);
 });
 
 var setDevice;
