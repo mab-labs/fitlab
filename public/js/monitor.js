@@ -16,6 +16,7 @@ socket.emit("getAllData", function (data) {
 });
 
 socket.on("record", function (data) {
+    console.log(record);
     var index = data.id
     $("#" + index).find("#fecha").text(data.data[index].date);
     $("#" + index).find("#temperatura").text(data.data[index].T);

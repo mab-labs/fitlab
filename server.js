@@ -107,7 +107,7 @@ client.on('message', function (topic, message) {
     });
 
     if (topic == "data") {
-        var date = moment(new Date()).tz('America/Guatemala').format("DD-MM-YYY HH:mm");
+        var date = moment(new Date()).tz('America/Guatemala').format("DD-MM-YYYY HH:mm");
         var newRecord = JSON.parse(message);
         dashboardData[newRecord.id].id = newRecord.id
         dashboardData[newRecord.id].T = newRecord.T;
